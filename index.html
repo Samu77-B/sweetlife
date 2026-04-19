@@ -2,63 +2,148 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <title>Sweet Life — Greek Patisserie & Bakery | Palmers Green, London</title>
+    <link rel="icon" href="assets/SL_logo_fav.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/SL_logo_fav.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header class="hero" role="banner">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__overlay"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <div class="hero__inner">
-        <a class="logo" href="#" aria-label="Sweet Life — home">
-          <span class="logo__ring">
-            <span class="logo__arc logo__arc--top">Sweet Life</span>
-            <span class="logo__center">Coffee</span>
-            <span class="logo__sub">Pastry &amp; Patisserie</span>
-            <span class="logo__arc logo__arc--bottom">Bakery</span>
-          </span>
-        </a>
+    <header class="site-header">
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <div class="site-nav__inner">
+          <a class="site-nav__brand" href="#top" id="top">
+            <img
+              src="assets/SL_logo.png"
+              width="69"
+              height="69"
+              alt="Sweet Life"
+              class="site-nav__logo"
+            />
+          </a>
+          <button
+            type="button"
+            class="site-nav__toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open menu"
+          >
+            <span class="site-nav__toggle-bars" aria-hidden="true">
+              <span class="site-nav__toggle-bar"></span>
+              <span class="site-nav__toggle-bar"></span>
+              <span class="site-nav__toggle-bar"></span>
+            </span>
+          </button>
+          <ul class="site-nav__links" id="primary-navigation">
+            <li><a href="#intro">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#welcome">Visit</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#visit">Find us</a></li>
+            <li class="site-nav__cta-wrap">
+              <a class="site-nav__cta" href="tel:+442088826039">020 8882 6039</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="site-nav__backdrop"
+          id="nav-backdrop"
+          hidden
+          aria-hidden="true"
+        ></div>
+      </nav>
 
-        <div class="hero__copy">
-          <p class="hero__kicker">
-            <span class="hero__stars" aria-hidden="true">★★★★★</span>
-            <span class="hero__kicker-text"
-              >Delicious, Authentic, Fresh, Satisfying, Unique</span
-            >
-          </p>
-          <h1 class="hero__title">Taste the Essence of Greece</h1>
-          <p class="hero__lead">
-            Authentic Greek bakery offering traditional pastries, cakes, coffee
-            &amp; more. Known for its welcoming warm atmosphere and outdoor
-            seating.
-          </p>
+      <div class="hero" role="banner">
+        <div class="hero__video-wrap" aria-hidden="true">
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/SweetLifeCafe_outside.jpeg"
+          >
+            <source src="assets/sweetlife.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__inner">
+          <div class="hero__titles">
+            <p class="hero__brand">Sweet Life Greek Patisserie</p>
+            <h1 class="hero__display">Your neighbourhood Greek home</h1>
+            <p class="hero__lead">
+              Coffee, pastry, and patisserie — warm hospitality and outdoor seating
+              in the heart of Palmers Green.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--light" href="#visit">Plan your visit</a>
+              <a class="btn btn--ghost" href="#gallery">See the gallery</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="taste section" aria-labelledby="taste-heading">
-        <div class="section__container taste__grid">
-          <div class="taste__text">
-            <h2 id="taste-heading" class="section__title">Taste of Greece</h2>
-            <p class="section__body">
-              Experience authentic Greek flavors at Sweet Life Greek Patisserie
-              in Palmers Green, North London. Indulge in our delightful treats.
+    <main id="main">
+      <section class="band band--white" id="intro" aria-labelledby="intro-a intro-b">
+        <div class="band__container">
+          <div class="split-head">
+            <h2 class="split-head__item" id="intro-a">The finest coffee &amp; pastry</h2>
+            <h2 class="split-head__item" id="intro-b">Seven days a week</h2>
+          </div>
+          <p class="band__lede">
+            Passing through North London? Step inside and discover not only the taste of
+            traditional Greek baking, but the welcome of our team. You’re always welcome.
+            Curious? Read on — we’d love to tell you more about Sweet Life.
+          </p>
+        </div>
+      </section>
+
+      <section class="band band--tan" id="welcome">
+        <div class="band__container">
+          <div class="split-head">
+            <h2 class="split-head__item">Our door is wide open</h2>
+            <h2 class="split-head__item">Every day of the week</h2>
+          </div>
+          <p class="band__prose">
+            Whether you’re here for a proper coffee, house-made pastry, a sweet treat with
+            friends, or a quiet moment with a book — Sweet Life is more than a counter.
+            Cross the threshold and you’re home: calm, warmth, and the smell of butter and
+            honey. It’s the perfect place to catch up, study, or simply linger in your
+            favourite spot — we’re here for you all year round.
+          </p>
+        </div>
+      </section>
+
+      <section class="band band--white section--taste" id="about" aria-labelledby="offer-title">
+        <div class="band__container band__container--split">
+          <div>
+            <p class="eyebrow" id="offer-title">On the menu</p>
+            <h2 class="section-heading">Enjoy our favourites</h2>
+            <p class="band__muted">
+              A glimpse of the counter — baklava, cakes, savouries, and Greek classics baked
+              with care.
             </p>
           </div>
           <div class="taste__images">
             <figure class="taste__figure">
               <img
-                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
-                alt="Sweet Life Greek Patisserie storefront"
+                src="assets/SweetLifeCafe_outside.jpeg"
+                alt="Sweet Life café and seating outside"
                 width="400"
                 height="520"
                 loading="lazy"
@@ -66,8 +151,8 @@
             </figure>
             <figure class="taste__figure">
               <img
-                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80"
-                alt="Fresh pastry with cream and berries"
+                src="assets/SL_Front of store.png"
+                alt="Sweet Life Greek Patisserie shop front"
                 width="400"
                 height="520"
                 loading="lazy"
@@ -77,49 +162,228 @@
         </div>
       </section>
 
-      <section class="testimonials section" aria-labelledby="testimonials-heading">
-        <div class="testimonials__bg" aria-hidden="true"></div>
-        <div class="testimonials__overlay"></div>
-        <div class="section__container testimonials__inner">
-          <h2 id="testimonials-heading" class="visually-hidden">Customer reviews</h2>
-          <div class="testimonials__grid">
-            <blockquote class="testimonial">
-              <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
-              <p class="testimonial__quote">
-                The pastries are delightful, and the coffee is perfect! A true
-                taste of Greece in London.
+      <section class="band band--cream" aria-labelledby="cards-title">
+        <div class="band__container">
+          <h2 class="visually-hidden" id="cards-title">What we serve</h2>
+          <div class="card-row">
+            <article class="info-card">
+              <h3 class="info-card__title">Coffee &amp; drinks</h3>
+              <p class="info-card__kicker">The best of our bar</p>
+              <p class="info-card__text">
+                Espresso, filter, cold drinks, and Greek favourites — crafted with care, every
+                round.
               </p>
-              <footer class="testimonial__author">
-                <span class="testimonial__avatar" role="img" aria-label="Maria P.">
-                  <span class="testimonial__avatar-inner testimonial__avatar-inner--sea"></span>
-                </span>
-                <cite class="testimonial__name">Maria P.</cite>
-              </footer>
-            </blockquote>
-            <blockquote class="testimonial">
-              <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
-              <p class="testimonial__quote">
-                Absolutely love the desserts! Every visit feels like a little
-                getaway to Greece. Highly recommend!
+            </article>
+            <article class="info-card">
+              <h3 class="info-card__title">Food &amp; pastry</h3>
+              <p class="info-card__kicker">Sweet &amp; savoury</p>
+              <p class="info-card__text">
+                Pastries, cakes, and treats for every moment — from a quick bite to
+                something special.
               </p>
-              <footer class="testimonial__author">
-                <span class="testimonial__avatar" role="img" aria-label="John D.">
-                  <span class="testimonial__avatar-inner testimonial__avatar-inner--ruins"></span>
-                </span>
-                <cite class="testimonial__name">John D.</cite>
-              </footer>
-            </blockquote>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--white menu" id="menu" aria-labelledby="menu-heading">
+        <div class="band__container menu__container">
+          <h2 id="menu-heading" class="section-heading menu__title">Drinks &amp; more</h2>
+          <p class="menu__intro">
+            Coffee, teas, waffles, and treats — ask our team for the day’s specials.
+          </p>
+          <div class="menu__grid">
+            <section class="menu-category" aria-labelledby="menu-cold">
+              <h3 id="menu-cold" class="menu-category__title">Cold Drinks</h3>
+              <ul class="menu-list">
+                <li>Espresso Freddo</li>
+                <li>Cappuccino Freddo</li>
+                <li>Ice Latte</li>
+                <li>Frappe</li>
+                <li>Ice Chocolate</li>
+              </ul>
+            </section>
+            <section class="menu-category" aria-labelledby="menu-extras">
+              <h3 id="menu-extras" class="menu-category__title">Extras</h3>
+              <ul class="menu-list">
+                <li>Shot</li>
+                <li>Syrups</li>
+                <li>Alternative milk</li>
+                <li>Whipped cream</li>
+              </ul>
+            </section>
+            <section class="menu-category menu-category--wide" aria-labelledby="menu-hot">
+              <h3 id="menu-hot" class="menu-category__title">Hot Drinks</h3>
+              <ul class="menu-list menu-list--columns">
+                <li>Espresso Single</li>
+                <li>Espresso Double</li>
+                <li>Cappuccino</li>
+                <li>Latte</li>
+                <li>Flat White</li>
+                <li>Americano</li>
+                <li>Macchiato Single</li>
+                <li>Macchiato Double</li>
+                <li>Nescafe</li>
+                <li>Greek Coffee</li>
+                <li>Hot Chocolate</li>
+              </ul>
+            </section>
+            <section class="menu-category menu-category--wide" aria-labelledby="menu-tea">
+              <h3 id="menu-tea" class="menu-category__title">Tea Collections</h3>
+              <ul class="menu-list menu-list--columns">
+                <li>Breakfast</li>
+                <li>Green</li>
+                <li>Earl Grey</li>
+                <li>Mint</li>
+                <li>Chamomile</li>
+                <li>Lemon-Lingo</li>
+                <li>Spiced Orange</li>
+                <li>Red Berry</li>
+                <li>Lemon</li>
+                <li>Peppermint</li>
+              </ul>
+            </section>
+            <section class="menu-category" aria-labelledby="menu-hot-ice">
+              <h3 id="menu-hot-ice" class="menu-category__title">Hot or Ice</h3>
+              <ul class="menu-list">
+                <li>Mocca Latte</li>
+                <li>Chai Latte</li>
+                <li>Matcha Latte</li>
+              </ul>
+            </section>
+            <section class="menu-category" aria-labelledby="menu-waffles">
+              <h3 id="menu-waffles" class="menu-category__title">Freshly Baked Waffles</h3>
+              <ul class="menu-list">
+                <li>Classic (Nutella + toppings)</li>
+                <li>One Scoop (Nutella + toppings)</li>
+                <li>Extra Scoop</li>
+              </ul>
+            </section>
+            <section class="menu-category" aria-labelledby="menu-shakes">
+              <h3 id="menu-shakes" class="menu-category__title">Milkshakes</h3>
+              <ul class="menu-list">
+                <li>Various flavours</li>
+              </ul>
+            </section>
+            <section class="menu-category" aria-labelledby="menu-orange">
+              <h3 id="menu-orange" class="menu-category__title">Fresh Orange Juice</h3>
+              <p class="menu-category__note">Squeezed to order.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--dark" aria-labelledby="story-title">
+        <div class="band__container band__container--narrow">
+          <p class="hero__brand hero__brand--on-dark" id="story-title">Sweet Life</p>
+          <h2 class="story-heading">Our story</h2>
+          <p class="band__lede band__lede--on-dark">
+            Authentic Greek flavours, family recipes, and a team that treats guests like
+            neighbours — that’s Sweet Life in Palmers Green.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery" aria-labelledby="gallery-heading">
+        <div class="section__container">
+          <h2 id="gallery-heading" class="section-heading">Gallery</h2>
+          <p class="section__body gallery__intro">
+            A glimpse of our pastries, cakes, and home on Aldermans Hill.
+          </p>
+          <ul class="gallery__grid">
+            <li class="gallery__item">
+              <img
+                src="assets/IMG_1104.jpg"
+                alt="Pastries and treats at Sweet Life"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="assets/IMG_1106.jpg"
+                alt="Greek patisserie selection"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="assets/SL_Front of store-Cake.png"
+                alt="Cakes displayed at the shop front"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="assets/SL_Front of store-Cake2.png"
+                alt="Celebration cakes in the window"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="assets/SL_Front of store.png"
+                alt="Sweet Life Greek Patisserie storefront"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="assets/SweetLifeCafe_outside.jpeg"
+                alt="Outdoor seating at Sweet Life"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="map-section section" id="visit" aria-labelledby="map-heading">
+        <div class="section__container">
+          <h2 id="map-heading" class="section-heading">Find us</h2>
+          <p class="section__body map-section__intro">
+            68 Aldermans Hill, Palmers Green, London N13 4PP
+          </p>
+          <div class="map-section__frame">
+            <iframe
+              title="Google Map: Sweet Life Greek Patisserie, 68 Aldermans Hill, London N13 4PP"
+              src="https://www.google.com/maps?q=68+Aldermans+Hill,+London+N13+4PP&amp;z=17&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="section__container site-footer__grid">
-        <div class="site-footer__col">
-          <h2 class="site-footer__heading">Bakery</h2>
+      <div class="section__container site-footer__main">
+        <div class="site-footer__brand-block">
+          <a class="site-footer__logo-link" href="#top" aria-label="Sweet Life — home">
+            <img
+              src="assets/SL_logo.png"
+              width="72"
+              height="72"
+              alt=""
+              class="site-footer__logo"
+              decoding="async"
+            />
+          </a>
+          <h2 class="site-footer__heading site-footer__heading--brand">Sweet Life</h2>
           <p class="site-footer__text">
-            Experience authentic Greek flavors in North London.
+            Greek patisserie &amp; bakery — authentic flavours in North London.
           </p>
           <a
             class="site-footer__social"
@@ -135,7 +399,14 @@
             </svg>
           </a>
         </div>
-        <div class="site-footer__col">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#intro">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#welcome">Visit</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#visit">Find us</a>
+        </nav>
+        <div class="site-footer__contact-block">
           <h2 class="site-footer__heading">Contact</h2>
           <p class="site-footer__text">
             <a href="tel:+442088826039">020 8882 6039</a>
@@ -146,8 +417,18 @@
         </div>
       </div>
       <div class="section__container site-footer__bottom">
-        <p class="site-footer__copy">&copy; 2026 Sweet Life. All rights reserved.</p>
+        <div class="site-footer__legal">
+          <p class="site-footer__copy">
+            &copy; <span id="footer-year">2026</span> Sweet Life. All rights reserved.
+          </p>
+          <p class="site-footer__credit">
+            A product of
+            <a href="https://paradigmstudio.net/" target="_blank" rel="noopener noreferrer"
+              >Paradigm Digital Studio</a>
+          </p>
+        </div>
       </div>
     </footer>
+    <script src="js/nav.js" defer></script>
   </body>
 </html>
